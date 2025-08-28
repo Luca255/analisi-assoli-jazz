@@ -17,7 +17,7 @@ library(forecast)
 
 # La matrice matmel usata qua è la seconda del capitolo precedente (matmel2)
 
-load("dati_capitolo_2.Rdata")
+load("../dati/dati_capitolo_2.Rdata")
 info_rid = info[which(info$numnotes > 150),]
 
 # tSNE
@@ -383,7 +383,7 @@ ggplot(df, aes(x=Indice, y=Valore)) +
 
 
 
-## Analisi con modelli ARIMA -----------------------------------------------
+## Analisi con modelli ARMA -----------------------------------------------
 
 soglia = 149
 idx = which(info$numnotes > soglia+1)

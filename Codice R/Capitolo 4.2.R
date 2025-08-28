@@ -10,7 +10,7 @@ library(nnet)
 
 # Operazioni preliminari --------------------------------------------------
 
-load("dati_capitolo_3.Rdata")
+load("../dati/dati_capitolo_3.Rdata")
 pitchdifflist = lapply(pitchlist, diff)
 
 

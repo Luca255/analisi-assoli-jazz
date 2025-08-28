@@ -8,8 +8,8 @@ library(patchwork)
 
 # Sistemazione tabella info_assoli ----------------------------------------
 
-info = read.csv("info_assoli_non_sistemato.csv", header=T)
-melody = read.csv2("melody.csv")
+info = read.csv("../dati/info_assoli_non_sistemato.csv", header=T)
+melody = read.csv2("../dati/melody.csv")
 
 
 # CODICE PER AGGIUNGERE IL NUMERO DI NOTE
@@ -67,7 +67,7 @@ anni = page %>%
 info$recordingyear = as.numeric(anni)
 
 # info_assoli sistemato
-write.csv2(info, "info_assoli.csv", row.names = FALSE)
+write.csv2(info, "../dati/info_assoli.csv", row.names = FALSE)
 
 
 
@@ -75,7 +75,7 @@ write.csv2(info, "info_assoli.csv", row.names = FALSE)
 # Analisi descrittiva del dataset -----------------------------------------
 
 # Caricando info_assoli direttamente non serve eseguire il blocco di codice precedente.
-info = read.csv2("info_assoli.csv", header=T)
+info = read.csv2("../dati/info_assoli.csv", header=T)
 
 
 # Grafici artisti 

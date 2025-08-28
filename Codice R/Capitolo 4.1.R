@@ -8,7 +8,7 @@ library(stringr)
 library(gm)
 library(pheatmap)
 
-load("dati_capitolo_3.Rdata")
+load("../dati/dati_capitolo_3.Rdata")
 
 
 # Funzioni utili del Capitolo 3 ---------------------------------------------
@@ -80,7 +80,7 @@ mappa = c(letters, LETTERS, as.character(0:9),
 length(mappa)
 mappa
 
-write.csv2(data.frame(intero = uniques, carattere = mappa), "corrispondenze.csv")
+write.csv2(data.frame(intero = uniques, carattere = mappa), "../corrispondenze.csv")
 
 
 # Applico le funzioni per rimappare e trasformare in stringhe i vettori di interi

@@ -6,7 +6,7 @@ library(cluster)
 library(stringdist)
 library(Rcpp)
 
-load("dati_capitolo_3.Rdata")
+load("../dati/dati_capitolo_3.Rdata")
 
 
 # Clustering con distanza euclidea ----------------------------------------
