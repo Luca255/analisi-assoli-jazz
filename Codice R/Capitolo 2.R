@@ -190,7 +190,11 @@ matmel_long_meanins = matmel_long %>%
 ggplot(matmel_long_meanins, aes(x=ID_note, y=meanpitch, color=instrument)) +
   geom_line(linewidth=0.8) +
   labs(x="Indice della nota", y="Pitch medio", col="Strumento") +
-  theme_bw()
+  theme_bw() +
+  scale_color_manual(values = scales::hue_pal()(5),
+                     labels = c("Sax contralto", "Sax soprano", "Trombone", 
+                                "Tromba", "Sax tenore"),
+                     name = "Strumento")
 
 # Funzione da passare all'ottimizzatore
 buildTemp = function(x, m, v) {

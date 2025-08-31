@@ -80,7 +80,7 @@ mappa = c(letters, LETTERS, as.character(0:9),
 length(mappa)
 mappa
 
-write.csv2(data.frame(intero = uniques, carattere = mappa), "../corrispondenze.csv")
+write.csv2(data.frame(Intero = uniques, Carattere = mappa), "../corrispondenze.csv", row.names = F)
 
 
 # Applico le funzioni per rimappare e trasformare in stringhe i vettori di interi
