@@ -1,5 +1,5 @@
 # Analisi di assoli jazz
-Questa repository contiene il codice in R completo della tesi triennale **Metodi statistici per l'analisi di assoli nella musica jazz**.
+Questa repository contiene il codice in R completo della tesi triennale **Metodi statistici per l'analisi di assoli nella musica jazz**, leggibile nel file ``Fabris_Luca.pdf``.
 
 Descrizione dei file csv:
 - **corrispondenze.csv** contiene la tabella per le corrispondenze tra i salti intervallari scritti come interi e rimappati come caratteri.
